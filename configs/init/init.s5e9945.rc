@@ -68,6 +68,7 @@ on init
     chown system system /dev/ems
     chown system system /sys/kernel/ems/emstune/req_mode
     chown system system /sys/kernel/ems/emstune/req_level
+    chmod 0660 /sys/kernel/ems/emstune/req_level
     chown system system /sys/kernel/ems/emstune/aio_tuner
     chown system system /sys/kernel/ems/emstune/reset
     chown system system /sys/kernel/ems/emstune/sched_boost
@@ -1060,9 +1061,10 @@ on property:sys.boot_completed=1
     chown system system /sys/class/sec/tsp2/input/enabled
     chown system system /sys/class/sec/sec_epen/input/enabled
     chown system system /sys/class/sec/tsp/enabled
+    chmod 0660 /sys/class/sec/tsp/enabled
     chown system system /sys/class/sec/tsp1/enabled
     chown system system /sys/class/sec/tsp2/enabled
-    chown system radio /sys/class/sec/tsp/cmd
+    chown system system /sys/class/sec/tsp/cmd
     chown system radio /sys/class/sec/tsp1/cmd
     chown system radio /sys/class/sec/tsp2/cmd
     chown system system /sys/class/sec/sec_epen/enabled
