@@ -1,2 +1,4 @@
-android.hardware.drm.IDrmFactory/widevine                   u:object_r:hal_drm_service:s0
-vendor.samsung.hardware.nfc_aidl.ISehNfc/default            u:object_r:hal_nfc_service:s0
+android.hardware.drm.IDrmFactory/widevine                       u:object_r:hal_drm_service:s0
+android.hardware.neuralnetworks.IDevice/enn                     u:object_r:hal_neuralnetworks_service:s0
+vendor.samsung.hardware.nfc_aidl.ISehNfc/default                u:object_r:hal_nfc_service:s0
+vendor.samsung_slsi.hardware.enn_aidl.IEnnInterfaceAidl/default u:object_r:hal_enn_service:s0

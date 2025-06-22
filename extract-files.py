@@ -24,6 +24,9 @@ namespace_imports = [
 
 
 blob_fixups: blob_fixups_user_type = {
+    'product/etc/sysconfig/google_aicore_LSI_S5E9945.xml': blob_fixup()
+        .regex_replace('(?m)^$(.|\n)*', '')
+        .regex_replace('\t', '    '),
     'product/etc/sysconfig/sysconfig_gemini.xml': blob_fixup()
         .regex_replace('.*O.*\n', '')
         .regex_replace('<f', '    <f'),
@@ -82,6 +85,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyalsa.so', 'libtinyalsa_samsung.so'),
     'vendor/lib64/libexynosgraphicbuffer.so': blob_fixup()
         .add_needed('libshim_ui.so'),
+    'vendor/lib64/libgraphgen.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/lib64/libsamsungcamerahal.so': blob_fixup()
         .sig_replace('e0 3a', 'a0 3b'),
     'vendor/lib64/libsec-ril.so': blob_fixup()

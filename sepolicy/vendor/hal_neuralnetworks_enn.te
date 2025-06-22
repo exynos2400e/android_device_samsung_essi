@@ -1,0 +1,8 @@
+type hal_neuralnetworks_enn, domain, enn_hal_type;
+type hal_neuralnetworks_enn_exec, exec_type, vendor_file_type, file_type;
+
+hal_server_domain(hal_neuralnetworks_enn, hal_neuralnetworks)
+
+init_daemon_domain(hal_neuralnetworks_enn)
+
+allow hal_neuralnetworks_enn sysfs_soc_id:file { read open };

@@ -121,15 +121,43 @@ vendor/lib64/hw/vulkan.samsung.so
 vendor/lib64/libSGPUOpenCL.so:vendor/lib64/libOpenCL.so;FIX_SONAME;TRYSRCFIRST
 
 # Compute - Neural Networks
+vendor/bin/hw/android.hardware.neuralnetworks-service-enn
+vendor/bin/hw/vendor.samsung_slsi.hardware.enn_aidl-service
+vendor/etc/enn/custom_mode_config.json
+vendor/etc/init/android.hardware.neuralnetworks-service-enn.rc
+vendor/etc/init/enn-lazy.rc
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks-service-enn.xml
+vendor/etc/vintf/manifest/enn-default.xml
+vendor/lib64/libcdi.so
+vendor/lib64/libcdi_wrapper.so
+vendor/lib64/libcommon.so
+vendor/lib64/libcrane_compiler.so
+vendor/lib64/libdove_compiler.so
+vendor/lib64/libeagle_compiler.so
 vendor/lib64/libenn_common_utils.so
 vendor/lib64/libenn_cpu_operators.so
+vendor/lib64/libenn_engine.so
 vendor/lib64/libenn_engine_lib.so
 vendor/lib64/libenn_model.so
+vendor/lib64/libenn_public_api_cpp.so
 vendor/lib64/libenn_public_api_cpp_lib.so
+vendor/lib64/libenn_user.samsung_slsi.so
 vendor/lib64/libenn_user_driver_cpu.so
+vendor/lib64/libenn_user_driver_gpu.so
 vendor/lib64/libenn_user_driver_gpu_lib.so
 vendor/lib64/libenn_user_driver_unified.so
 vendor/lib64/libenn_user_lib.so
+vendor/lib64/libgraphgen.so
+vendor/lib64/libgraphgen_api.so
+vendor/lib64/libipv.so
+vendor/lib64/libir.so
+vendor/lib64/libisa.so
+vendor/lib64/libisa_generator.so
+vendor/lib64/libncp_wrapper.so
+vendor/lib64/libnpu_compiler.so
+vendor/lib64/libsait_npu_compiler.so
+vendor/lib64/libveriben_lib.so
+vendor/lib64/vendor.samsung_slsi.hardware.enn_aidl-V1-ndk.so
 
 # DRM
 vendor/apex/com.google.android.widevine.nonupdatable.apex
@@ -272,6 +300,7 @@ vendor/firmware/wlan/kiwi_v2/qcom_cfg.ini
 # Google
 product/etc/permissions/privapp-permissions-google-product.xml
 product/etc/sysconfig/asi_features.xml
+product/etc/sysconfig/google_aicore_LSI_S5E9945.xml
 product/etc/sysconfig/sysconfig_contextual_search.xml
 product/etc/sysconfig/sysconfig_gemini.xml
 product/priv-app/HotwordEnrollmentOKGoogleEx4CORTEXM55/HotwordEnrollmentOKGoogleEx4CORTEXM55.apk

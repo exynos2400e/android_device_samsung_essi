@@ -19,4 +19,12 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl">
+        <name>vendor.samsung_slsi.hardware.enn_aidl</name>
+        <version>1</version>
+        <interface>
+            <name>IEnnInterfaceAidl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

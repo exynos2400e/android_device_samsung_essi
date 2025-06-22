@@ -1,1 +1,2 @@
+allow appdomain graphics_device:chr_file getattr;
 allow appdomain sysfs_gpu:dir search;

@@ -1,0 +1,10 @@
+allow enn_hal_type {
+    dmabuf_system_heap_device
+    npu_device
+}:chr_file { ioctl read open };
+
+allow enn_hal_type graphics_device:chr_file { ioctl read write getattr open };
+allow enn_hal_type sysfs_gpu:dir search;
+allow enn_hal_type sysfs_gpu:file { getattr open read };
+
+binder_use(enn_hal_type)

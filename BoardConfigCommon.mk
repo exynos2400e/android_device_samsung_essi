@@ -102,6 +102,9 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     vendor_dlkm
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := $(shell echo $$(( $(BOARD_SUPER_PARTITION_SIZE) - 4 * 1024**2 )))
 
+# Platform
+TARGET_BOOTLOADER_BOARD_NAME := s5e9945
+
 # Properties
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/props/product.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
