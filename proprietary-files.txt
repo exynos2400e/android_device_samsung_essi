@@ -74,7 +74,6 @@ vendor/lib64/libhwjsqz.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libsemseg.so
 vendor/lib64/libsensorlistener.so
-vendor/lib64/libtflitecore.so
 vendor/lib64/libvpl.so
 vendor/lib64/libvpl_dof.so
 vendor/lib64/vendor.samsung.hardware.thermal-V1-ndk.so
